@@ -73,6 +73,11 @@ img {
   width: auto;
   max-width: 100%; }
 
+img.cover-photo {
+  width:290px; /* you can use % */
+  height: auto;
+}
+
 pre {
   background: #F1F0EA;
   border: 1px solid #DDDBCC;

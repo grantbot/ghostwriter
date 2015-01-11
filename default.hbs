@@ -30,19 +30,15 @@
             <div class="container">
                 <div class="site-title-wrapper">
                     {{#if @blog.logo}}
-                        <a class="site-logo js-ajax-link" title="{{@blog.title}}" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
+                        <a class="site-logo js-ajax-link"
+                          title="{{@blog.title}}" href="/"><img class="cover-photo" src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
                     {{else}}
-                        <h1 class="site-title"><a class="js-ajax-link" title="{{@blog.title}}" href="/">{{@blog.title}}</a></h1>
 
                     {{/if}}
                 </div>
 
                 <ul class="site-nav">
                     <li class="site-nav-item"><a href="http://github.com/grantbot">Github</a> / <a href="http://linkedin.com/in/gwu01">Linkedin</a></li>
-
-                    {{#if @blog.logo}}
-                        <li class="site-nav-item"><a href="{{@blog.url}}/rss">RSS</a></li>
-                    {{/if}}
                 </ul>
             </div>
         </header>
