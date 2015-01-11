@@ -1,14 +1,14 @@
 # A Simplified Version of the Excellent Ghostwriter Theme
 ### What's Different
 * 'Home Page' shows post index instead of latest post by default
-* ...which obviates the need for "latest post" and "browse posts" buttons
+* ...which obviates the need for 'latest post' and 'browse posts' buttons
 * Post index shows article tags in each post snippet
 * Removes RSS button from site header
 * Removes post index from author info page
 
 The original Ghostwriter theme is excellent but I wanted something even cleaner.
 
-Shout out to roryg; thanks for the dope theme!
+Shout out to roryg for making a dope theme!
 
 
 
