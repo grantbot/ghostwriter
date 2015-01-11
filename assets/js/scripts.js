@@ -121,7 +121,7 @@ jQuery(function($) {
                     NProgress.start();
 
                     $postIndex.fadeOut(300, function() {
-                        $latestPost.fadeIn(300);
+                        $postIndex.fadeIn(300);
                         NProgress.done();
                     });
                 }
