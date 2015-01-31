@@ -55,7 +55,10 @@ jQuery(function($) {
             // Set the title to the requested urls document title
             document.title = $html.filter('title').text();
 
-            $('html, body').animate({'scrollTop': 0});
+            //Don't animate if we're going back to homepage
+            //if (State.cleanUrl !== 'http://wugrant.com/') {
+              //$('html, body').animate({'scrollTop': 0});
+            //}
 
             $ajaxContainer.fadeOut(500, function() {
                 $latestPost = $newContent.filter('#latest-post');
@@ -120,10 +123,14 @@ jQuery(function($) {
 
                     NProgress.start();
 
-                    $postIndex.fadeOut(300, function() {
+                    if (url === '/') {
+                      $postIndex.fadeOut(300, function() {
                         $postIndex.fadeIn(300);
                         NProgress.done();
-                    });
+                      });
+                    } else {
+                      setTimeout(NProgress.done, 300);
+                    }
                 }
             }
         }
