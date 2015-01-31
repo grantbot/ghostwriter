@@ -56,9 +56,10 @@ jQuery(function($) {
             document.title = $html.filter('title').text();
 
             //Don't animate if we're going back to homepage
-            //if (State.cleanUrl !== 'http://wugrant.com/') {
-              //$('html, body').animate({'scrollTop': 0});
-            //}
+            if (State.cleanUrl !== 'http://www.wugrant.com/' && 
+                State.cleanUrl !== 'http://wugrant.com/') {
+              $('html, body').animate({'scrollTop': 0});
+            }
 
             $ajaxContainer.fadeOut(500, function() {
                 $latestPost = $newContent.filter('#latest-post');
